@@ -1,0 +1,16 @@
+
+
+      <div [ngClass]="{'list-group-item':true,
+      'list-group-item-success':loveIts>0,
+      'list-group-item-danger':loveIts <0
+    }"> 
+
+<h2>{{titre}}</h2>
+<div class= "pull-right text-muted">{{laDate | date : "M/d/yyyy, H:mm a"}}</div>
+<p>
+{{contenu}}
+</p>
+<button class="btn btn-success" (click)="onLove()">Love It</button>
+<button class="btn btn-danger" (click)="onDislike()">Don't Love It</button>
+</div>
+
